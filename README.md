@@ -1,4 +1,4 @@
-# Gnome Sift 🗂️
+# Gnome Sift 
 
 [![CI](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml/badge.svg)](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -7,8 +7,9 @@
 
 **Gnome Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
 
-![Gnome Sift Mockup](gnome_sift/resources/com.github.frephs.Sift.svg) *(Icon)*
+![Gnome Sift Mockup](gnome_sift/resources/com.github.frephs.Sift.svg)
 
+![Demo Gif](media/demo.gif)
 ## ✨ Features
 
 - **Gesture-Driven Organization**: Swipe left to trash, right to organize, up to skip, and down to handle later.
@@ -64,10 +65,10 @@ python3 gnome_sift/main.py
 ```
 
 ### Shortcuts
-- **← / A**: Trash
-- **→ / D**: Organize (move to destination)
-- **↑ / W**: Skip
-- **↓ / S**: Later
+- **A**: Trash
+- **D**: Organize (move to destination)
+- **W**: Skip
+- **S**: Later
 - **Ctrl + Z**: Undo last trash action
 
 ## 🛠️ Development
