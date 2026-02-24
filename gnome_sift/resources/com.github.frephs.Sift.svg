@@ -1,0 +1,64 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- GNOME Adwaita Palette -->
+    <linearGradient id="card_grad" x1="64" y1="30" x2="64" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f5f4"/>
+    </linearGradient>
+
+    <!-- Shadow for the whole stack -->
+    <filter id="stack_shadow" x="-30%" y="-20%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- The Stack -->
+  <g filter="url(#stack_shadow)">
+    
+    <!-- Deepest Card (Shadow/Bottom) -->
+    <rect x="28" y="52" width="72" height="52" rx="10" fill="#9a9996" />
+    
+    <!-- Card 4 (Bottom-ish) -->
+    <rect x="28" y="48" width="72" height="52" rx="10" fill="#deddda" stroke="#c0bfbc" stroke-width="1" />
+    
+    <!-- Card 3 -->
+    <rect x="28" y="42" width="72" height="52" rx="10" fill="#f6f5f4" stroke="#deddda" stroke-width="1" />
+    
+    <!-- Card 2 -->
+    <rect x="28" y="36" width="72" height="52" rx="10" fill="#ffffff" stroke="#deddda" stroke-width="1" />
+
+    <!-- Top Card (The Active one) -->
+    <g transform="translate(0, -4)">
+        <!-- Front profile (Darker edge) -->
+        <rect x="24" y="24" width="80" height="60" rx="12" fill="#deddda" />
+        <!-- Top surface -->
+        <rect x="24" y="20" width="80" height="60" rx="12" fill="url(#card_grad)" stroke="#c0bfbc" stroke-width="0.5" />
+        
+        <!-- "File" Content Indicators (Adwaita Blue accents) -->
+        <rect x="36" y="35" width="20" height="20" rx="4" fill="#3584e4" opacity="0.1" />
+        <path d="M 40 40 L 52 40 M 40 45 L 48 45 M 40 50 L 50 50" stroke="#3584e4" stroke-width="2.5" stroke-linecap="round" />
+        
+        <rect x="64" y="38" width="28" height="3" rx="1.5" fill="#9a9996" />
+        <rect x="64" y="46" width="20" height="3" rx="1.5" fill="#9a9996" />
+        <rect x="64" y="54" width="24" height="3" rx="1.5" fill="#9a9996" />
+    </g>
+    
+    <!-- Subtle Interaction: A card "slipping out" or tilted -->
+    <!-- (Optional: could be interpreted as the swipe gesture) -->
+    <!-- Let's keep it clean as a "stack" but with one card slightly offset to show it's dynamic -->
+    <path d="M 104 28 L 115 40 L 104 52" fill="none" stroke="#26a269" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+
+  </g>
+
+  <!-- Top Gloss Highlight on the very top card -->
+  <path d="M 36 16 L 92 16 C 98 16 104 22 104 28 L 104 32 L 24 32 L 24 28 C 24 22 30 16 36 16 Z" fill="#ffffff" opacity="0.2" transform="translate(0, -4)" />
+
+</svg>
