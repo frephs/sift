@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Gnome Sift
+Comment=A tactile, gesture-driven file triage application
+Exec=gnome-sift
+Icon=@APP_ID@
+Terminal=false
+Type=Application
+Categories=Utility;GNOME;
+StartupWMClass=@APP_ID@
+Keywords=file;triage;organize;swipe;

@@ -1,0 +1,3 @@
+#!/bin/sh
+export PYTHONPATH="@pythondir@:$PYTHONPATH"
+exec "@PYTHON@" -m gnome_sift.main "$@"
