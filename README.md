@@ -20,7 +20,7 @@
 - GTK 4 & Libadwaita
 - PyGObject
 
-### Local Setup
+### Local Setup (Development)
 1. Clone the repository:
    ```bash
    git clone https://github.com/frephs/gnome-sift.git
@@ -32,10 +32,24 @@
    pip install -r requirements.txt
    ```
 
-3. Register the app locally (to see it in your GNOME overview):
+3. Register the app locally (optional, for quick dev):
    ```bash
    python3 install_local.py
    ```
+
+### Official Build & Install (Meson)
+You can use the provided **Makefile** for common shortcuts:
+```bash
+make setup      # Configure build
+make compile    # Build app
+sudo make install # Install to system
+```
+
+*Alternatively, use meson directly:*
+```bash
+meson setup builddir --prefix=/usr/local
+sudo meson install -C builddir
+```
 
 ## 🎮 Usage
 
