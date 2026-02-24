@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: fedora:latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        dnf install -y \
+          meson \
+          ninja-build \
+          gcc \
+          python3-devel \
+          pkgconf-pkg-config \
+          gtk4-devel \
+          libadwaita-devel \
+          python3-gobject-devel
+
+    - name: Setup build
+      run: meson setup builddir --prefix=/usr
+
+    - name: Compile
+      run: meson compile -C builddir
