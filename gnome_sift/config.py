@@ -10,10 +10,10 @@ CONFIG_FILE = CONFIG_DIR / "config.json"
 MAX_RECENT = 10
 
 DEFAULT_SHORTCUTS = {
-    "trash": Gdk.KEY_Left,
-    "organize": Gdk.KEY_Right,
-    "skip": Gdk.KEY_Down,
-    "later": Gdk.KEY_Up
+    "trash": Gdk.KEY_a,
+    "organize": Gdk.KEY_d,
+    "skip": Gdk.KEY_w,
+    "later": Gdk.KEY_s
 }
 
 SHORTCUT_NAMES = {

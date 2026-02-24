@@ -285,17 +285,19 @@ class GnomeSiftWindow(Adw.ApplicationWindow):
         if self._current_index >= len(self._files):
             return False
             
-        # Match current config shortcuts
-        if keyval == self._config.shortcuts["trash"] or keyval == Gdk.KEY_Delete:
+        # Match current config shortcuts (case-insensitive for letter keys)
+        keyval_lower = Gdk.keyval_to_lower(keyval)
+        
+        if keyval_lower == self._config.shortcuts["trash"] or keyval == Gdk.KEY_Delete:
             self._do_trash(self._files[self._current_index])
             return True
-        if keyval == self._config.shortcuts["organize"]:
+        if keyval_lower == self._config.shortcuts["organize"]:
             self._do_organize_prompt(self._files[self._current_index])
             return True
-        if keyval == self._config.shortcuts["skip"]:
+        if keyval_lower == self._config.shortcuts["skip"]:
             self._do_skip()
             return True
-        if keyval == self._config.shortcuts["later"]:
+        if keyval_lower == self._config.shortcuts["later"]:
             self._do_later()
             return True
         return False
