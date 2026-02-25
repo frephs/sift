@@ -1,11 +1,11 @@
-# Gnome Sift 
+# Sift
 
 [![CI](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml/badge.svg)](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![GNOME 45+](https://img.shields.io/badge/GNOME-45%2B-blue.svg)](https://www.gnome.org/)
 
-**Gnome Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
+**Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
 
 ![Gnome Sift Mockup](gnome_sift/resources/com.github.frephs.Sift.svg)
 
