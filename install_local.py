@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 
-APP_ID = "com.github.frephs.Sift"
+APP_ID = "io.github.frephs.Sift"
 PREFIX = Path.home() / ".local/share"
 REPO_ROOT = Path(__file__).resolve().parent
 
@@ -10,10 +10,10 @@ REPO_ROOT = Path(__file__).resolve().parent
 desktop_content = f"""[Desktop Entry]
 Name=Sift
 Exec=python3 {REPO_ROOT}/sift/main.py
-Icon={REPO_ROOT}/sift/resources/com.github.frephs.Sift.svg
+Icon={REPO_ROOT}/sift/resources/io.github.frephs.Sift.svg
 Terminal=false
 Type=Application
-Categories=Utility;GNOME;
+Categories=Utility;GNOME;GTK;
 StartupWMClass={APP_ID}
 """
 

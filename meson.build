@@ -7,7 +7,7 @@ i18n = import('i18n')
 gnome = import('gnome')
 python = import('python')
 
-project_id = 'com.github.frephs.Sift'
+project_id = 'io.github.frephs.Sift'
 
 subdir('data')
 subdir('sift')

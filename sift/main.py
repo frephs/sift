@@ -16,7 +16,7 @@ sys.path.insert(0, str(_HERE.parent))
 
 from sift.window import SiftWindow
 
-APP_ID = "com.github.frephs.Sift"
+APP_ID = "io.github.frephs.Sift"
 
 
 class SiftApp(Adw.Application):

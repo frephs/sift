@@ -19,8 +19,8 @@ jobs:
 
     - name: Build Flatpak
       run: |
-        flatpak-builder --repo=repo --force-clean build-dir com.github.frephs.Sift.json
-        flatpak build-bundle repo sift.flatpak com.github.frephs.Sift
+        flatpak-builder --repo=repo --force-clean build-dir io.github.frephs.Sift.json
+        flatpak build-bundle repo sift.flatpak io.github.frephs.Sift
 
     - name: Create Release
       uses: softprops/action-gh-release@v2

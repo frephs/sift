@@ -9,7 +9,7 @@
 
 **Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
 
-![Sift Mockup](sift/resources/com.github.frephs.Sift.svg)
+![Sift Mockup](sift/resources/io.github.frephs.Sift.svg)
 
 ![Demo Gif](media/demo.gif)
 ## ✨ Features

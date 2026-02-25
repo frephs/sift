@@ -1,5 +1,5 @@
 {
-    "app-id": "com.github.frephs.Sift",
+    "app-id": "io.github.frephs.Sift",
     "runtime": "org.gnome.Platform",
     "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
@@ -10,7 +10,14 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--filesystem=home",
+        "--filesystem=xdg-documents",
+        "--filesystem=xdg-download",
+        "--filesystem=xdg-pictures",
+        "--filesystem=xdg-videos",
+        "--filesystem=xdg-music",
+        "--filesystem=xdg-desktop",
+        "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.freedesktop.FileManager1"
     ],
     "modules": [

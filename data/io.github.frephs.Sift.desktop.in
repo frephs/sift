@@ -2,9 +2,9 @@
 Name=Sift
 Comment=A tactile, gesture-driven file triage application
 Exec=sift
-Icon=@APP_ID@
+Icon=io.github.frephs.Sift
 Terminal=false
 Type=Application
-Categories=Utility;GNOME;
-StartupWMClass=@APP_ID@
+Categories=Utility;GNOME;GTK;
+StartupWMClass=io.github.frephs.Sift
 Keywords=file;triage;organize;swipe;

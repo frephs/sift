@@ -2,7 +2,7 @@ desktop_conf = configuration_data()
 desktop_conf.set('APP_ID', project_id)
 
 configure_file(
-  input: 'com.github.frephs.Sift.desktop.in',
+  input: 'io.github.frephs.Sift.desktop.in',
   output: project_id + '.desktop',
   configuration: desktop_conf,
   install: true,
@@ -10,7 +10,7 @@ configure_file(
 )
 
 configure_file(
-  input: 'com.github.frephs.Sift.metainfo.xml.in',
+  input: 'io.github.frephs.Sift.metainfo.xml.in',
   output: project_id + '.metainfo.xml',
   configuration: desktop_conf,
   install: true,

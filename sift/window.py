@@ -21,7 +21,7 @@ class SiftWindow(Adw.ApplicationWindow):
         super().__init__(application=app, **kwargs)
         self.set_default_size(480, 780)
         self.set_title("Sift")
-        self.set_icon_name("com.github.frephs.Sift")
+        self.set_icon_name("io.github.frephs.Sift")
 
         self._files: list[Gio.File] = []
         self._current_index = 0
@@ -56,7 +56,7 @@ class SiftWindow(Adw.ApplicationWindow):
         self._title_box.set_valign(Gtk.Align.CENTER)
         
         # App icon (branded)
-        self._app_icon_img = Gtk.Image.new_from_icon_name("com.github.frephs.Sift")
+        self._app_icon_img = Gtk.Image.new_from_icon_name("io.github.frephs.Sift")
         self._app_icon_img.set_pixel_size(24)
         self._app_icon_img.update_property([Gtk.AccessibleProperty.LABEL], ["Application Icon"])
         self._title_box.append(self._app_icon_img)
