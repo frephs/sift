@@ -9,12 +9,12 @@ python_sources = [
 ]
 
 install_data(python_sources,
-  install_dir: join_paths(python.find_installation('python3').get_install_dir(), 'gnome_sift')
+  install_dir: join_paths(python.find_installation('python3').get_install_dir(), 'sift')
 )
 
 # Install CSS
 install_data('style.css',
-  install_dir: join_paths(python.find_installation('python3').get_install_dir(), 'gnome_sift')
+  install_dir: join_paths(python.find_installation('python3').get_install_dir(), 'sift')
 )
 
 # Entry point script
@@ -24,8 +24,8 @@ conf.set('pkgdatadir', join_paths(get_option('prefix'), get_option('datadir'), m
 conf.set('pythondir', python.find_installation('python3').get_install_dir())
 
 configure_file(
-  input: 'gnome-sift.in',
-  output: 'gnome-sift',
+  input: 'sift.in',
+  output: 'sift',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir'),

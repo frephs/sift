@@ -6,7 +6,7 @@ BUILDDIR = builddir
 all: setup compile
 
 help:
-	@echo "Gnome Sift Makefile commands:"
+	@echo "Sift Makefile commands:"
 	@echo "  make setup      - Initialize meson build directory"
 	@echo "  make compile    - Compile the project"
 	@echo "  make install    - Install the application (requires sudo if prefix is /usr/local)"
@@ -36,7 +36,7 @@ uninstall:
 	fi
 
 run:
-	python3 gnome_sift/main.py
+	python3 sift/main.py
 
 register:
 	python3 install_local.py

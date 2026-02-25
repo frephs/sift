@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Gnome Sift
+Name=Sift
 Comment=A tactile, gesture-driven file triage application
-Exec=gnome-sift
+Exec=sift
 Icon=@APP_ID@
 Terminal=false
 Type=Application

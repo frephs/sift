@@ -14,13 +14,13 @@ from .config import Config, SHORTCUT_NAMES, RecentFolders
 from .shortcuts import ShortcutEditorDialog
 
 
-class GnomeSiftWindow(Adw.ApplicationWindow):
+class SiftWindow(Adw.ApplicationWindow):
     """Primary application window."""
 
     def __init__(self, app: Adw.Application, **kwargs):
         super().__init__(application=app, **kwargs)
         self.set_default_size(480, 780)
-        self.set_title("Gnome Sift")
+        self.set_title("Sift")
         self.set_icon_name("com.github.frephs.Sift")
 
         self._files: list[Gio.File] = []
@@ -62,7 +62,7 @@ class GnomeSiftWindow(Adw.ApplicationWindow):
         self._title_box.append(self._app_icon_img)
         
         # App name label
-        self._app_name_label = Gtk.Label(label="Gnome Sift")
+        self._app_name_label = Gtk.Label(label="Sift")
         self._app_name_label.add_css_class("title")
         self._title_box.append(self._app_name_label)
         

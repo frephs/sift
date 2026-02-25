@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gnome Sift – GNOME file triage app."""
+"""Sift – GNOME file triage app."""
 
 import sys
 import gi
@@ -14,12 +14,12 @@ from pathlib import Path
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE.parent))
 
-from gnome_sift.window import GnomeSiftWindow
+from sift.window import SiftWindow
 
 APP_ID = "com.github.frephs.Sift"
 
 
-class GnomeSiftApp(Adw.Application):
+class SiftApp(Adw.Application):
     """Top-level Adw.Application."""
 
     def __init__(self):
@@ -31,7 +31,7 @@ class GnomeSiftApp(Adw.Application):
     def do_startup(self):
         Adw.Application.do_startup(self)
         self._load_css()
-        GLib.set_application_name("Gnome Sift")
+        GLib.set_application_name("Sift")
         GLib.set_prgname(APP_ID)
         
         # Add local icon to theme EARLY
@@ -46,7 +46,7 @@ class GnomeSiftApp(Adw.Application):
     def do_activate(self):
         win = self.get_active_window()
         if win is None:
-            win = GnomeSiftWindow(app=self)
+            win = SiftWindow(app=self)
         win.present()
 
     def _load_css(self):
@@ -62,7 +62,7 @@ class GnomeSiftApp(Adw.Application):
 
 
 def main():
-    app = GnomeSiftApp()
+    app = SiftApp()
     return app.run(sys.argv)
 
 

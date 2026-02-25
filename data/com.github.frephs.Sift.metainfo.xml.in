@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>@APP_ID@</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Sift</name>
+  <summary>Organize your files with tactile swiping gestures</summary>
+  <description>
+    <p>
+      Sift is a tactile, gesture-driven file triage application for GNOME. 
+      Inspired by "swiping" interfaces, it allows you to quickly organize, trash, 
+      or skip through your files with smooth animations and keyboard-first power.
+    </p>
+    <ul>
+      <li>Gesture-Driven Organization: Swipe left to trash, right to organize.</li>
+      <li>Rich Previews: Native document and image previews.</li>
+      <li>Keyboard Power: Fully navigable via keyboard shortcuts.</li>
+      <li>Recent Folders: Smart history of your sorting destinations.</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The main swiping interface of Sift</caption>
+      <image>https://raw.githubusercontent.com/frephs/sift/main/media/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/frephs/sift</url>
+  <url type="bugtracker">https://github.com/frephs/sift/issues</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2024-02-25" />
+  </releases>
+  <developer_name>frephs</developer_name>
+  <update_contact>frephs@users.noreply.github.com</update_contact>
+</component>

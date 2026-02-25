@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from gi.repository import Gdk
 
-CONFIG_DIR = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")) / "gnome-sift"
+CONFIG_DIR = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")) / "sift"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 MAX_RECENT = 10
 

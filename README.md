@@ -1,13 +1,13 @@
-# Gnome Sift 
+# Sift 
 
-[![CI](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml/badge.svg)](https://github.com/frephs/gnome-sift/actions/workflows/ci.yml)
+[![CI](https://github.com/frephs/sift/actions/workflows/ci.yml/badge.svg)](https://github.com/frephs/sift/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![GNOME 45+](https://img.shields.io/badge/GNOME-45%2B-blue.svg)](https://www.gnome.org/)
 
-**Gnome Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
+**Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
 
-![Gnome Sift Mockup](gnome_sift/resources/com.github.frephs.Sift.svg)
+![Sift Mockup](sift/resources/com.github.frephs.Sift.svg)
 
 ![Demo Gif](media/demo.gif)
 ## ✨ Features
@@ -29,8 +29,8 @@
 ### Local Setup (Development)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/frephs/gnome-sift.git
-   cd gnome-sift
+   git clone https://github.com/frephs/sift.git
+   cd sift
    ```
 
 2. Install dependencies:
@@ -61,7 +61,7 @@ sudo meson install -C builddir
 
 Launch the app from your GNOME Activities overview or run:
 ```bash
-python3 gnome_sift/main.py
+python3 sift/main.py
 ```
 
 ### Shortcuts
@@ -73,7 +73,7 @@ python3 gnome_sift/main.py
 
 ## 🛠️ Development
 
-Gnome Sift is built using:
+Sift is built using:
 - **Python** & **PyGObject**
 - **GTK 4** & **Libadwaita**
 - **Vanilla CSS** for custom branding and animations.

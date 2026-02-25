@@ -1,21 +1,33 @@
-name: Release
+name: Flatpak Release
 
 on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 jobs:
-  release:
+  flatpak:
+    name: "Build Flatpak Bundle"
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-47
+      options: --privileged
+
     steps:
     - uses: actions/checkout@v4
 
+    - name: Build Flatpak
+      run: |
+        flatpak-builder --repo=repo --force-clean build-dir com.github.frephs.Sift.json
+        flatpak build-bundle repo sift.flatpak com.github.frephs.Sift
+
     - name: Create Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
+        files: sift.flatpak
         generate_release_notes: true
         draft: false
         prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

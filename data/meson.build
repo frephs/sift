@@ -9,9 +9,17 @@ configure_file(
   install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
+configure_file(
+  input: 'com.github.frephs.Sift.metainfo.xml.in',
+  output: project_id + '.metainfo.xml',
+  configuration: desktop_conf,
+  install: true,
+  install_dir: join_paths(get_option('datadir'), 'metainfo')
+)
+
 # Install icon
 install_data(
-  '../gnome_sift/resources/' + project_id + '.svg',
+  '../sift/resources/' + project_id + '.svg',
   install_dir: join_paths(get_option('datadir'), 'icons/hicolor/scalable/apps'),
   rename: project_id + '.svg'
 )
