@@ -6,6 +6,7 @@
 [![GNOME 45+](https://img.shields.io/badge/GNOME-45%2B-blue.svg)](https://www.gnome.org/)
 [![Downloads](https://img.shields.io/github/downloads/frephs/sift/total)](https://github.com/frephs/sift/releases)
 
+## Meet tinder for your file system.
 
 **Sift** is a tactile, gesture-driven file triage application for GNOME. Inspired by the simplicity of "swiping" interfaces, it allows you to quickly organize, trash, or skip through your files with smooth animations and keyboard-first power.
 
